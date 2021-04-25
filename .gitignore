@@ -1,52 +1,71 @@
-# Prerequisites
-*.d
+# Este arquivo .gitignore deve ser colocado na raiz do diretório do projeto Unity
+#
+# Receba as últimas notícias do https://github.com/github/gitignore/blob/master/Unity.gitignore
+#
+/[Eu... ibrary/
+/[Tt] emp/
+/[Oo] bj/
+/[Bb] uild/
+/[Bb] uilds/
+/[Eu... ogs/
+/[Uu] ser[Ss]ettings/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# MemóriaCapturas podem ficar excessivas em tamanho.
+# Eles também poderiam conter dados extremamente sensíveis
+/[Mm] emoryCaptures/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Os dados de meta de ativos só devem ser ignorados quando o ativo correspondente também for ignorado
+! /[Aa]ssets/**/*.meta
 
-# Precompiled Headers
-*.gch
-*.pch
+# Descompromisse esta linha se você quiser ignorar o plugin de ferramentas de armazenamento de ativos
+# /[Aa]ssets/AssetStoreTools*
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Plugin Jetbrains Rider autogerado
+/[Aa] ssets/Plugins/Editor/JetBrains*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Diretório de cache do Visual Studio
+.vs/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Diretório de cache Gradle
+.gradle/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
+# Arquivos de solução e projeto VS/MD/Consulo autogerados
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
 *.pdb
+*.mdb
+*.opendb
+*. VC.db
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Metacários gerados pelo Unity3D
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D gerou arquivo em relatórios de acidentes
+sysinfo.txt
+
+# Constrói
+*.apk
+*.aab
+*.unitypackage
+
+# Arquivo gerado por crashlytics
+crashlytics-build.properties
+
+# Endereçados Embalados
+/[Aa] ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/ *.bin*
+
+# Ativos Android gerados automaticamente temporários
+/[Aa] ssets/[Ss]treamingAssets/aa.meta
+/[Aa] ssets/[Ss]treamingAssets/aa/*
